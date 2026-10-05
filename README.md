@@ -132,6 +132,8 @@ python scripts/prepare_data.py --input data/Herlev_PapSmear.zip --output data/pr
 ```
 
 ### Training Models
+> **Note**: The entire model pipeline—including data ingestion, augmentation, ViT / EfficientNetB0 / CNN model definitions, training loops, and evaluation—is fully implemented within a single standalone script (`notebooks/cervicalcancerdetectionmcaproject.py`). This unified structure allows seamless execution on Google Colab or local GPU environments without external module dependencies.
+
 
 **Train CNN Model**:
 ```bash
